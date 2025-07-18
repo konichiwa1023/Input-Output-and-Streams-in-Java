@@ -1,0 +1,13 @@
+public class SumCalculator {
+    static int sum(int n) {
+        // Base case: when n is the last number 1
+        if (n == 1) return 1;
+        // Recursive step: add the current number and call itself with n-1
+        return n + sum(n - 1);
+    }
+
+    public static void main(String[] args) {
+        // Start the recursive call
+        System.out.println(sum(5));
+    }
+}
