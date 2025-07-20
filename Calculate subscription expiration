@@ -1,0 +1,17 @@
+import java.time.LocalDate;
+
+public class Subscription {
+    // Create method with date and number of days
+    static LocalDate calculateExpiration(LocalDate date, int days) {
+        // Add days to the date
+        return date.plusDays(days);
+    }
+
+    public static void main(String[] args) {
+        LocalDate start = LocalDate.now();
+        
+        // Call method to calculate the expiration date
+        LocalDate expiration = calculateExpiration(start, 60); 
+        System.out.println("Expiration date: " + expiration); 
+    }
+}
